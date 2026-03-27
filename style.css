@@ -1,0 +1,18 @@
+body {
+  font-family: Arial;
+  text-align: center;
+}
+
+.cards {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
+}
+
+.card {
+  border:1px solid black;
+  padding:15px;
+  cursor:pointer;
+  min-width:120px;
+}
