@@ -1,0 +1,6 @@
+{
+  "name": "StudyPro",
+  "short_name": "Study",
+  "start_url": "index.html",
+  "display": "standalone"
+}
