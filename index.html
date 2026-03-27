@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StudyPro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📚 StudyPro</h1>
+
+<h3>Select Class</h3>
+<select id="classSelect">
+  <script>
+    for(let i=1;i<=12;i++){
+      document.write(`<option value="${i}">Class ${i}</option>`);
+    }
+  </script>
+</select>
+
+<h3>Select Subject</h3>
+<div class="cards">
+
+  <div class="card" onclick="openSubject('maths')">📘 Maths</div>
+  <div class="card" onclick="openSubject('english')">📖 English</div>
+  <div class="card" onclick="openSubject('science')">🔬 Science</div>
+  <div class="card" onclick="openSubject('social')">🌍 Social Science</div>
+  <div class="card" onclick="openSubject('gk')">🧠 GK</div>
+  <div class="card" onclick="openSubject('computer')">💻 Computer</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
