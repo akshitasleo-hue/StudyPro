@@ -1,24 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Quiz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz - StudyPro</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2 id="quizTitle"></h2>
+<div class="container quiz-container">
+  <h2 id="quizTitle"></h2>
 
-<div id="question"></div>
-<div id="options"></div>
+  <div id="question" class="quiz-question"></div>
+  <div id="options" class="quiz-options"></div>
 
-<p id="result"></p>
-<button onclick="nextQuestion()">Next</button>
+  <p id="result" class="quiz-result"></p>
+  
+  <div class="button-group">
+    <button onclick="nextQuestion()" class="btn-primary">📝 Next Question</button>
+  </div>
 
-<h3>🎥 Video Lesson</h3>
-<iframe id="video" width="300" height="200"></iframe>
+  <div class="learning-section">
+    <h3>🎥 Video Lesson</h3>
+    <div class="video-container">
+      <iframe id="video" width="400" height="300" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
 
-<h3>🤖 AI Explanation</h3>
-<p id="aiExplain"></p>
+  <div class="learning-section">
+    <h3>🤖 AI Explanation</h3>
+    <p id="aiExplain" class="ai-explanation"></p>
+  </div>
+</div>
 
 <script src="script.js"></script>
 <script>startQuiz();</script>
